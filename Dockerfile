@@ -1,4 +1,7 @@
-FROM python:3.10.11-slim
+# docker build -t mosazhaw/chat-playground .
+# docker run --name chat-playground -p 9000:8501 -d mosazhaw/chat-playground
+
+FROM python:3.12.7
 
 WORKDIR /usr/app
 
