@@ -1,11 +1,11 @@
-# docker build -t mosazhaw/chat-playground .
-# docker run --name chat-playground -p 9000:8501 -d mosazhaw/chat-playground
+# docker build -t mosazhaw/streamlit-chat .
+# docker run --name streamlit-chat -p 9000:8501 -d mosazhaw/streamlit-chat
 
 FROM python:3.12.7
 
 WORKDIR /usr/app
 
-COPY . .
+COPY app.py requirements.txt ./
 
 RUN pip install -r requirements.txt
 
